@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samantha Ivas Jurković</title>
+    <style>
+        @font-face {
+            font-family: 'customfont';
+            src: url('Samantha_IvasJurkovic_projektni_zadatak1.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(252, 255, 224, 0.3);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow: auto;
+        }
+        h1 {
+            font-family: 'customfont';
+            font-size: 50px;
+            color: rgb(117, 164, 127);
+            margin-left: 40px;
+        }
+        h2 {
+            color: rgb(186, 205, 146);
+            margin-left: 40px;
+        }
+        p {
+            color: rgb(117, 164, 127);
+            margin-left: 40px;
+        }
+        li {
+            color: rgb(117, 164, 127);
+            margin-left: 80px;
+        }
+        a:link {
+            color: rgb(255, 158, 170);
+        }
+        a:visited {
+            color: rgb(255, 208, 208);
+        }
+        a:hover {
+            color: hotpink;
+        }
+        .topnav {
+            background-color: rgb(245, 218, 210);
+            overflow: hidden;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(117, 164, 127);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Arial', sans-serif;
+        }
+        .topnav a:hover {
+            background-color: rgba(252, 129, 158, 0.4);
+            color: rgb(247, 65, 143);
+        }
+        .topnav a.active {
+            background-color: rgb(252, 129, 158);
+            color: white;
+        }
+        .topnav .icon {
+            display: none;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-gap: 20px;
+            margin: 20px;
+            margin-left: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .image-description {
+            background-color: rgba(108, 91, 123, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 12px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .image-container:hover .image-description {
+            opacity: 1;
+        }
+        header {
+            background-image: url('SamanthaIJ.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 50px 0;
+            text-align: center;
+            color: white;
+        }
+        header::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80%;
+        }
+        header h2 {
+            color: rgb(245, 218, 210);
+            font-size: 90px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 20px;
+        }
+        footer {
+            text-align: left;
+            padding: 3px;
+            background-color: rgb(245, 218, 210);
+            color: white;
+        }
+        footer {
+            display: block;
+        }
+        footer a:visited {
+            color: rgb(252, 129, 158);
+        }
+        footer a:hover {
+            color: #FF6868;
+        }
+        div {
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>O meni</h2>
+    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="#O meni" class="active">O meni</a>
+        <a href="file:///C:/Users/pc/OneDrive/Dokumenti/SAMMY%20RADOVI/stranica/index2.html">Vježbe</a>
+        <a href="file:///C:/Users/pc/OneDrive/Dokumenti/SAMMY%20RADOVI/stranica/index3.html">Video</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <h1>Samantha Ivas Jurković</h1>
+    <h2>Kolegij Digitalni multimedij 1</h2>
+    <p>Dobrodošli na moju stranicu! Ja sam <i>Samantha Ivas Jurković</i>, studentica grafičkog dizajna na grafičkom fakultetu u Zagrebu.<br>
+        Moje obrazovanje obuhvaća širok spektar znanja, od tradicionalnih tehnika crtanja do naprednih digitalnih tehnologija.<br> Težim stvarati inovativne i estetski privlačne projekte.
+        Kada nisam zauzeta radom na fakultetskim projektima, uživam u:</p>
+    <ul>
+        <li>putovanjima</li>
+        <li>radu sa životinjama</li>
+        <li>crtanju</li>
+        <li>kuhanju</li>
+    </ul>
+    <h2>Moja galerija</h2>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="SObinUprav23063007480.jpg" alt="grafika1">
+            <div class="image-description">Slobodna tema za imitaciju bakroreza</div>
+        </div>
+        <div class="image-container">
+            <img src="SObinUprav23063007471.jpg" alt="Grafika2">
+            <div class="image-description">Dürerova grafika-imitacija bakroreza</div>
+        </div>
+        <div class="image-container">
+            <img src="IMG-20230813-WA0012.jpg" alt="putovanje">
+            <div class="image-description">Putovanje u Italiju</div>
+        </div>
+        <div class="image-container">
+            <img src="IMG-20220624-WA0054.jpg" alt="putovanje1">
+            <div class="image-description">Putovanje u Barcelonu</div>
+        </div>
+        <div class="image-container">
+            <img src="IMG-20240601-WA0031.jpg" alt="životinjice">
+            <div class="image-description">životinjice</div>
+        </div>
+        <div class="image-container">
+            <img src="IMG-20230702-WA0007.jpg" alt="životinjice2">
+            <div class="image-description">životinjice</div>
+        </div>
+    </div>
+    <br>
+    <h2>Muzika koja me insipirira dok radim</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_nxkvJYi4BI?si=D5_rhp1-bcwRLPQP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wn-VdZ4LEKg?si=CHf5_B_A7KQlSC4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br><br>
+    <footer>
+        <p><b>Kako biste me bolje upoznali</b> uvijek možete posjetiti moje društvene mreže:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/risottopot?igsh=MTE0dHdla3pxamhmNQ==" target="_blank">Instagram</a></li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+            <li>Tiktok</li>
+        </ul>
+    </footer>
+</body>
+</html>

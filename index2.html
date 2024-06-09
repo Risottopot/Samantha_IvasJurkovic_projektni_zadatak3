@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		<title>Samantha Ivas Jurković</title>
+	</head>
+	<style>
+        @font-face {
+            font-family: 'customfont';
+            src: url('Samantha_IvasJurkovic_projektni_zadatak1.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(252, 255, 224, 0.3);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow: auto;
+        }
+        h1 {
+            font-family: 'customfont';
+            font-size: 50px;
+            color: rgb(117, 164, 127);
+            margin-left: 40px;
+        }
+        h2 {
+            color: rgb(186, 205, 146);
+            margin-left: 40px;
+        }
+        p {
+            color: rgb(117, 164, 127);
+            margin-left: 40px;
+        }
+        li {
+            color: rgb(117, 164, 127);
+            margin-left: 80px;
+        }
+        a:link {
+            color: rgb(255, 158, 170);
+        }
+        a:visited {
+            color: rgb(255, 208, 208);
+        }
+        a:hover {
+            color: hotpink;
+        }
+        .topnav {
+            background-color: rgb(245, 218, 210);
+            overflow: hidden;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(117, 164, 127);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Arial', sans-serif;
+        }
+        .topnav a:hover {
+            background-color: rgba(252, 129, 158, 0.4);
+            color: rgb(247, 65, 143);
+        }
+        .topnav a.active {
+            background-color: rgb(252, 129, 158);
+            color: white;
+        }
+        .topnav .icon {
+            display: none;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-gap: 20px;
+            margin: 20px;
+            margin-left: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .image-description {
+            background-color: rgba(108, 91, 123, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 12px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .image-container:hover .image-description {
+            opacity: 1;
+        }
+        header {
+            background-image: url('SamanthaIJ.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 50px 0;
+            text-align: center;
+            color: white;
+        }
+        header::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80%;
+        }
+        header h2 {
+            color: rgb(245, 218, 210);
+            font-size: 90px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 20px;
+        }
+        footer {
+            text-align: left;
+            padding: 3px;
+            background-color: rgb(245, 218, 210);
+            color: white;
+        }
+        footer {
+            display: block;
+        }
+        footer a:visited {
+            color: rgb(252, 129, 158);
+        }
+        footer a:hover {
+            color: #FF6868;
+        }
+        div {
+            overflow: visible;
+        }
+		.video-container {
+            width: 80%;
+			flex: 1 1 calc(50% - 40px);
+            max-width: 600px;
+            background: rgb(245, 218, 210);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+		.small-video {
+            max-width: 300px; 
+			max-height: 400px;
+        }
+		.large-image {
+            max-width: 1000px; 
+			max-height: 700px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Vježbe</h2>
+    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="file:///C:/Users/pc/OneDrive/Dokumenti/SAMMY%20RADOVI/stranica/index.html">O meni</a>
+        <a href="#Vježbe" class="active">Vježbe</a>
+        <a href="file:///C:/Users/pc/OneDrive/Dokumenti/SAMMY%20RADOVI/stranica/index3.html" >Video</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <h1>Samantha Ivas Jurković</h1>
+    <h2>Vježbe s kolegija Digitalni Multimedij 1</h2>
+	<p>Na ovoj stranici možete vidjeti moje radove i zadatke s kolegija <b>Digitalni multimedij 1</b> na kojem se obrađuju teme poput <i>fonta,
+	osnova vektorske i piksel grafike, video obrade te izrade web dokumenta.</i> 
+	</p>
+	<br>
+	<h2>Galerija slika za vektorsku grafiku</h2>
+	<p>Prvi zadatak vektorske grafike bila je izrada vlastitog <i>fonta</i>. Primjer fonta možete vidjeti na svakoj stranici kao naslov,
+	a u njemu je ispisano moje ime i prezime. Font sam radila u <b>FontForgeu</b>.<br> Drugi zadatak se odnosio na crtanje <i>Bezierovih krivulja
+	u koordinatnom sustavu</i>. Druga i treća slika po redu pokazuju moje primjere zadatka.<br> Četvrta i peta slika obrađuju treći zadatak te <i>temu boja, izrade objekata
+	i transformacija</i>. Za vlastiti primjer sam koristila svog psa kao motiv. <br> Zadnje dvije slike obuhvaćaju posljednju temu u vektorskoj
+	grafici, prije projektnog zadatka, a to su <i>izrada složenih objekata,gradijenta i transparencija.</i> U mom slučaju koristila sam svoju ambalažu <br>
+	za čaj kako bih napravila jednostavan poster koristeći zadane upute.
+	</p>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="SamanthaIvasJurkovicfont.jpg" alt="Font">
+            <div class="image-description">Font</div>
+        </div>
+        <div class="image-container">
+            <img src="SamanthaIvasJurkovickrivulje-01.jpg" alt="krivulje">
+            <div class="image-description">Bezierova krivulja, precizno crtanje</div>
+        </div>
+        <div class="image-container">
+            <img src="SamanthaIvasJurkovickrivulje1-01.jpg" alt="krivulje2">
+            <div class="image-description">Bezierova krivulja, precizno crtanje, moj primjer</div>
+        </div>
+        <div class="image-container">
+            <img src="SamanthaIvasJurkoviccvijet-01.jpg" alt="cvijet">
+            <div class="image-description">Boja, transformacije</div>
+        </div>
+        <div class="image-container">
+            <img src="SamanthaIvasJurkoviccvijet2-02.jpg" alt="rita">
+            <div class="image-description">Boje,transformacije, moj primjer</div>
+        </div>
+        <div class="image-container">
+            <img src="SamanthaIvasJurkovicvj4-01.jpg" alt="casa">
+            <div class="image-description">Gradijenti, transparencija</div>
+        </div>
+		<div class="image-container">
+            <img src="SamanthaIvasJurkovicvj4-02.jpg" alt="poster">
+            <div class="image-description">Gradijenti, transparencija, moj primjer</div>
+        </div>
+    </div>
+	<br>
+		<h2>Prvi projektni zadatak - vektorska grafika</h2>
+		<p>Zadatak je bio napraviti vektorsku sliku iz dobivenog predloška te putem pisanih uputa i
+		prijašnjeg iskustva stvoriti zadane elemente.<br> Moja slika je sadržavala bokal soka i staklene čaše u kojima se nalaze
+		kriške limuna. U prvom planu nalazila su se dva cjelovita limuna s listićima mente razbacanim uokolo. Vrat bokala se nije 
+		vidio <br> već sam ga dodala kako bih upotpunila sliku. Dodala sam sjene i odsjaje te sam stavila rozu pozadinu da se sve uklopi.
+		</p>
+		<div class="gallery">
+        <div class="image-container">
+            <img src="Samantha_IvasJurkovic_projektni_zadatak1-01.jpg" alt="Voće">
+            <div class="image-description">Projektni Zadatak</div>
+        </div>
+	</div>
+	<br>
+	<h2>Galerija slika za piksel grafiku</h2>
+	<p>U zadatcima za piksel grafiku prvo smo retuširali fotografije (prva i druga slika). Upotrijebila sam
+	 različite tehnike retuširanja, uključujući uklanjanje manjih pozadinskih šumova zamućivanjem,
+	 kloniranje, kopiranje većih područja, lokalno posvjetljivanje / tamnjenje i globalnu korekciju tonova.
+	 Druga vježba temeljila se na koloriranju slike. Od crno-bijele fotografije, putem Adjustment layera, pretvorila sam
+	 sliku u kolor. Vlastitu fotografiju, pretvorila sam u crno-bijelu i kolorirala ju s tri boje,
+	 stvarajući pet primjera iste slike s različitim postavkama kolorizacije (slike tri i četiri). Posljednji zadatak
+	(slika pet i šest) bio je napraviti fotomontažu od zadanih elemenata. Fotomontažu sam postigla dobrim selekcijama,
+	transformiranjem elemenata pomoću perspekitvnih alata, sjenama i korekcijom boja.
+	</p>
+	<div class="gallery">
+        <div class="image-container">
+            <img src="Samantha_IvasJurkovic_vj5.jpg" alt="djevojka">
+            <div class="image-description">Retušitanje</div>
+        </div>
+        <div class="image-container">
+            <img src="Samantha_IvasJurkovic_vj5.1.jpg" alt="žena">
+            <div class="image-description">Retušitanje, moj primjer</div>
+        </div>
+        <div class="image-container">
+            <img src="Samantha_IvasJurkovic_vj6.jpg" alt="dječak">
+            <div class="image-description">Koloriranje</div>
+        </div>
+        <div class="image-container">
+            <img src="Samantha_IvasJurkovic_vj6.1 (1).jpg" alt="ja">
+            <div class="image-description">Koloriranje, moj primjer</div>
+        </div>
+        <div class="image-container">
+            <img src="Samantha_IvasJurkovic_vj7.jpg" alt="auto">
+            <div class="image-description">Fotomontaža</div>
+        </div>
+        <div class="image-container">
+            <img src="Samantha_IvasJurkovic_vj7.1.jpg" alt="auto1">
+            <div class="image-description">Fotomontaža, moj primjer</div>
+        </div>
+    </div>
+	<br>
+		<h2>Drugi projektni zadatak - piksel grafika</h2>
+		<p>U projektu sam kombinirala baznu fotografiju s precizno izrezanim elementima iz
+		drugih skupina fotografija, dodajući vlastitu fotografiju na kraju svega. Koristila
+		sam alate za retuširanje kako bih ispravila nedostatke i uklonila neželjene dijelove.
+		Selekcije kanala upotrijebila sam za precizno odabiranje područja, a transformacijske alate
+		za prilagodbu pozicije i veličine elemenata. Nekoliko elemenata sam kolorirala u različite boje,
+		koristeći maske za slojeve za dodatne korekcije. Realistično sam izradila sjene kako bih postigla
+		uvjerljivu fotomontažu.
+		</p>
+		<div class="gallery">
+        <div class="image-container large-image">
+            <img src="Samantha_IvasJurkovic_projektni_zadatak2.jpg" alt="ulica">
+            <div class="image-description">Projektni Zadatak 2</div>
+        </div>
+	</div>
+    <br>
+	<h2>Video Galerija</h2>
+	<p>Posljednja tema kolegija je video obrada. Kinemagraf je bio prvi zadatak ove teme. To je video isječak u kojem se
+	ponavljajuća sekvenca spaja sa statičnom slikom, stvarajući intrigantan efekt. Kroz korištenje Photoshopa i Shotcuta
+	stvorila sam vlastiti kinemagraf (slika 2). Pritom sam iskoristila gif koji sam sama animirala u aplikaciji 
+	Flipaclip. Video uradci koji su postavljeni nakon gif formata su kompleksniji projekti<br> rađeni u Shotcutu. Kako bih ispunila 
+	kriterije zadatka trebala sam spojiti minimalno dva isječka te im dodati pomični i statični tekst. Video sam dodatno
+	uredila različitim filterima poput kontrasta, prozirnosti, tranzicija i naposlijetku sam dodala audio zapis.
+	</p>
+    <br>
+	<div class="gallery">
+        <div class="image-container">
+            <img src="Samantha_IvasJurkovic_vj8.gif" alt="svijeća">
+            <div class="image-description">Kinemagraf</div>
+        </div>
+        <div class="image-container">
+            <img src="Samantha_IvasJurkovic_vj8.1.gif" alt="video">
+            <div class="image-description">Kinemagraf, moj primjer</div>
+        </div>
+	</div>
+        <div class="video-container small-video">
+            <video controls>
+            <source src="Samantha_IvasJurkovic_vj9.mp4" type="video/mp4">
+        </video></div>
+		<br>
+        </div>
+        <div class="video-container small-video">
+            <video controls>
+            <source src="Samantha_IvasJurkovic_vj9.1.mp4" type="video/mp4">
+        </video>
+        </div>
+    </div>
+	<br>
+	<p><b>mali komentari za profesore:</b></p>
+	<o1>
+	<li>drugi Youtube video na "o meni" html stranici radi; video nije moguće dijeliti na ovaj način.</li>
+	<li>moj font pravilno radi u Adobe programima, no trenutno na stranici se ne prikazuje kako spada.</li>
+	<li>pokušala sam dodati uvećanje slika, ali negdje se desila greška i samo jedna od slika bi se uvećala bezobzira na koju sliku bih stisnula.</li>
+	</o1>
+	<br><br>
+    <footer>
+        <p><b>Kako biste me bolje upoznali</b> uvijek možete posjetiti moje društvene mreže:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/risottopot?igsh=MTE0dHdla3pxamhmNQ==" target="_blank">Instagram</a></li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+            <li>Tiktok</li>
+        </ul>
+    </footer>
+</body>
+</html>
